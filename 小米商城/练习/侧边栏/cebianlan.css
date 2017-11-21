@@ -1,0 +1,148 @@
+*{
+	box-sizing: border-box;
+}
+div,ul,li,aside{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.ba-wrap{
+	background: #fff;
+	position: relative;
+}
+.container{
+	width: 1126px;
+	margin: 0px auto;
+}
+.banner{
+	position: relative;
+}
+.banner > span{
+	position: absolute;
+	z-index: 2;
+	font-size: 50px;
+	color: #aaa;
+}
+.banner > span:first-child{
+	left:250px;
+	top: 200px;
+}
+.banner > span:last-child{
+    right: 0px;
+    top: 200px;
+}
+.ba-wrap .img-wrap{
+	width: 100%;
+	position: relative;
+}
+.ba-wrap .img-wrap li{
+	position: absolute;
+}
+.icon_wrap{
+	position: relative;
+}
+.icon{
+	position: absolute;
+	bottom:-400px;
+	right: 50px;
+	overflow: hidden;
+}
+.icon > li{
+	width: 10px;
+	height: 10px;
+	float: left;
+	border-radius: 50%;
+	background:#444 ;
+	border: solid 1px #aaa;
+	margin-right: 10px;
+}
+
+/*侧边栏*/
+.aside{
+	width: 240px;
+	height: 460px;
+	background: rgb(21,21,21,0.7);
+	position: absolute;
+	padding: 20px 0;
+	position: relative;
+}
+.aside .text-wrap{
+}
+.aside .text-wrap > li{
+	padding:0px 20px;
+}
+.aside .text-wrap > li.active{
+	background: orangered;
+}
+.aside .text-wrap >li > a{
+	color: #fff;
+	line-height: 40px;
+	font-size: 14px;
+	overflow: hidden;
+}
+.aside .text-wrap > li > a > i{
+	font-style: normal;
+	float: right;
+	right: 0;
+	font-size: 22px;
+}
+.aside .text-wrap .menu{
+	position: absolute;
+	background: #fff;
+	height: 460px;
+	top: 0px;
+	left: 240px;
+	margin: 0;
+	overflow: hidden;
+	box-shadow:inset 0 0 5px #eee;
+	display: none;
+	z-index: 3;
+}
+.aside .text-wrap .menu.active{
+	display: block;
+}
+.aside .text-wrap .menu  ul {
+	width: 221px;
+	float: left;
+	padding: 10px 0;
+	margin-left: 10px;
+}
+/*.aside .text-wrap .menu  ul > li{
+	
+}*/
+.aside .text-wrap .menu  ul > li a{
+    color: #333;
+    text-align: center;
+}
+.aside .text-wrap .menu  ul > li a img{
+	margin: 4px 10px;
+	padding: 10px 0;
+}
+.aside .text-wrap .menu  ul > li a i{
+	font-style: normal;
+	font-size:16px ;
+	color: #333;
+	position: relative;
+	bottom: 30px;
+}
+.aside .text-wrap .menu  ul > li a i.active{
+	color:orangered;
+}
+.aside .text-wrap .menu  ul > li a > span{
+	float: right;
+	margin:18px 10px;
+	padding: 0px 15px;
+	color: orangered;
+	border: solid 1px orangered;
+	
+}
+.aside .text-wrap .menu  ul > li a > span.active{
+	background: orangered;
+	color: #fff;
+	transition-duration: all 1.5;
+}

@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>小米商城—首页</title>
+	</head>
+
+.main-wrap{
+	margin-top: 50px;
+}
+.box-hd{
+	color: #333;
+	overflow: hidden;
+	line-height: 45px;
+}
+.box-hd h3{
+	float: left;
+	font-weight: normal;
+	font-size: 22px;
+}
+.box-hd .hd-list{
+	float: right;
+	overflow: hidden;
+	line-height: 25px;
+	margin-top: 10px;
+}
+.box-hd .hd-list li{
+	float: left;
+	margin-left: 30px;*/
+	/*设置透明边框颜色*/
+	border-bottom: solid 2px transparent;
+	cursor: pointer;
+	transition: all .5s;
+}
+.box-hd .hd-list li.active{
+	color: orangered;
+	border-bottom: solid 2px orangered;
+}
+.box-mn{
+	overflow: hidden;
+}
+.box-left{
+	float: left;
+	width: 234px;
+}
+.box-left img{
+	width: 100%;
+}
+.box-right{
+	float: left;
+	
+}
+ .mnList{
+	overflow: hidden;
+	width: 992px;
+}
+.mnList li{
+	width: 234px;
+	height: 246px;
+	float: left;
+	margin-left: 14px;
+	margin-bottom: 14px;
+	background: #fff;
+	position: relative;
+}
+.mnList li > a{
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 30px auto 10px;
+}
+.mnList li > a img{
+	width: 100%;
+}
+.mnList li  h4 a{
+	font-size: 14px;
+	color: #333;
+	font-weight: normal;
+}
+.mnList li .des{
+	color: #b0b0b0;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.mnList li .price span{
+	color: orangered;
+}
+.mnList li .price del{
+	color: #b0b0b0;
+}
+.mnList li > i{
+	position: absolute;
+	width: 64px;
+	line-height: 20px;
+	background: red;
+	color: #fff;
+	top: 0;
+	left:calc(50% - 32px);
+	font-style: normal;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<body>
+		<!--第一部分 --- 小导航nav-->
+		<div class="top-wrap">
+			<div class="container">
+				<ul class="left">
+					<li>
+						<a href="">小米商城</a>
+					</li>
+					<li>
+						<a href="">MIUI</a>
+					</li>
+					<li>
+						<a href="">米聊</a>
+					</li>
+					<li>
+						<a href="">游戏</a>
+					</li>
+					<li>
+						<a href="">多看阅读</a>
+					</li>
+					<li>
+						<a href="">云服务</a>
+					</li>
+					<li>
+						<a href="">金融</a>
+					</li>
+					<li>
+						<a href="">小米商城移动版</a>
+					</li>
+					<li>
+						<a href="">问题反馈</a>
+					</li>
+					<li>
+						<a href="">Select Region</a>
+					</li>
+				</ul>
+				<div class="right">
+					<ul class="left">
+						<li>
+							<a href="">登录</a>
+						</li>
+						<li>
+							<a href="">注册</a>
+						</li>
+						<li>
+							<a href="">消息通知</a>
+						</li>
+					</ul>
+					<div>
+						<p class="shop">
+							<i class="fa fa-cart-plus"></i> 购物车(0)
+						</p>
+						<div class="shopMenu">
+							购物车中什么都没有，赶紧去采购吧~
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--第二部分 ---主导航-->
+		<header class="nav-wrap">
+			<div class="container">
+				<a href="" class="logo">
+					<img src="imgs/logo.png" alt="" />
+				</a>
+				<a class="yuan" href="">
+					<img src="imgs/yyymix.gif" />
+				</a>
+				<ul class="left">
+					<li>
+						<a href=""> 小米手机 </a>
+					</li>
+					<li>
+						<a href=""> 红米 </a>
+					</li>
+					<li>
+						<a href=""> 平板 · 笔记本 </a>
+					</li>
+					<li>
+						<a href=""> 电视 </a>
+					</li>
+					<li>
+						<a href=""> 盒子 · 影音 </a>
+					</li>
+					<li>
+						<a href=""> 路由器 </a>
+					</li>
+					<li>
+						<a href=""> 智能硬件 </a>
+					</li>
+					<li>
+						<a href=""> 服务 </a>
+					</li>
+					<li>
+						<a href=""> 社区 </a>
+					</li>
+				</ul>
+				<div class="right">
+					<div class="">
+						<input type="text" />
+						<p class="schShow">
+							<a href=""> 电视4A 65" </a>
+							<a href=""> 小米Max 2 赠耳机 </a>
+						</p>
+						<ul class="schList">
+							<li>
+								<a href="">
+									小米6
+									<span> 约有7件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									红米Note 4X
+									<span> 约有8件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									小米MIX
+									<span> 约有1件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									小米Max 2
+									<span> 约有3件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									小米手机5c
+									<span> 约有3件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									手环
+									<span> 约有6件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									耳机
+									<span> 约有19件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									充电宝
+									<span> 约有19件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									运动鞋
+									<span> 约有2件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									路由器
+									<span> 约有17件 </span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									小米盒子
+									<span> 约有8件 </span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="">
+						<i class="fa fa-search"></i>
+					</a>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<!--导航的下拉菜单-->
+			<div class="dropMenu">
+				<div class="container">
+					<ul>
+						<li>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xm6-320.png" alt="" />
+								<h4>小米6</h4>
+							</a>
+							<i>2499元起</i>
+						</li>
+						<li>
+							<div><span>现货</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/max2_toubu.png" alt="" />
+								<h4>小米Max 2</h4>
+							</a>
+							<i>1699元起</i>
+						</li>
+						<li>
+							<div><span>新品</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/5x-2!160x110.jpg" alt="" />
+								<h4>小米5X</h4>
+							</a>
+							<i>1499元</i>
+						</li>
+						<li>
+							<div><span>下单立减500</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/xiaomiNOTE2-320-220!160x110.jpg" alt="" />
+								<h4>小米Note 2</h4>
+							</a>
+							<i>2799元起</i>
+						</li>
+						<li>
+							<div><span>下单立减500</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/MIX-320-220!160x110.jpg" alt="" />
+								<h4>小米MIX</h4>
+							</a>
+							<i>3499元起</i>
+						</li>
+						<li>
+							<div><span>下单立减200</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/5s-12!160x110.jpg" alt="" />
+								<h4>小米5s</h4>
+							</a>
+							<i>1999元起</i>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div><span>热卖</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/hmn4xtb!160x110.jpg" alt="" />
+								<h4>红米Note 4X</h4>
+							</a>
+							<i>999元起</i>
+						</li>
+						<li>
+							<div><span>热卖</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/hm4x!160x110.jpg" alt="" />
+								<h4>红米4X</h4>
+							</a>
+							<i>699元起</i>
+						</li>
+						<li>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/320-2202!160x110.jpg" alt="" />
+								<h4>红米4</h4>
+							</a>
+							<i>799元起</i>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/mipad3_320.png" alt="" />
+								<h4>小米平板3 64GB</h4>
+							</a>
+							<i>1499元</i>
+						</li>
+						<li>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/video/bijiben32012.5!160x110.jpg" alt="" />
+								<h4>小米笔记本Air 12.5"</h4>
+							</a>
+							<i>3599元</i>
+						</li>
+						<li>
+							<div><span>新品</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/bijiben320!160x110.jpg" alt="" />
+								<h4>小米笔记本Air 13.3"</h4>
+							</a>
+							<i>4999元</i>
+						</li>
+
+					</ul>
+					<ul>
+						<li>
+							<div><span>超薄旗舰</span></div>
+							<a href="">
+								<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmds_49.png" alt="" />
+								<h4>小米电视4 49英寸</h4>
+							</a>
+							<i>3499元</i>
+						</li>
+						<li>
+							<div><span>超薄旗舰</span></div>
+							<a href="">
+								<img src="imgs/5.jpg" alt="" />
+								<h4>小米电视4 55英寸</h4>
+							</a>
+							<i>4299元</i>
+						</li>
+						<li>
+							<div><span>超薄旗舰</span></div>
+							<a href="">
+								<img src="imgs/5.jpg" alt="" />
+								<h4>小米电视4 65英寸</h4>
+							</a>
+							<i>9999元</i>
+						</li>
+						<li>
+							<div><span>超薄旗舰</span></div>
+							<a href="">
+								<img src="imgs/5.jpg" alt="" />
+								<h4>小米电视4A 49英寸</h4>
+							</a>
+							<i>1899元</i>
+						</li>
+						<li>
+							<div><span>热卖</span></div>
+							<a href="">
+								<img src="imgs/6.jpg" alt="" />
+								<h4>小米电视4A 43英寸</h4>
+							</a>
+							<i>1899元</i>
+						</li>
+						<li>
+							<div><span>热卖</span></div>
+							<a href="">
+								<img src="imgs/2.jpg" alt="" />
+								<h4>小米电视4A 49英寸</h4>
+							</a>
+							<i>2299元</i>
+						</li>
+						<!--<li>
+	    					<a href="">
+	    						<img src="imgs/2.jpg" alt="" />
+	    						<h4>查看全部</h4>
+	    						<h4>小米电视</h4>
+	    					</a>
+	    				</li>-->
+					</ul>
+					<ul>
+						<li>
+							<a href="">
+								<img src="imgs/3.jpg" alt="" />
+								<h4>小米盒子3s</h4>
+							</a>
+							<i>329元</i>
+						</li>
+						<li>
+							<div><span>现货</span></div>
+							<a href="">
+								<img src="imgs/3.jpg" alt="" />
+								<h4>小米盒子3c</h4>
+							</a>
+							<i>229元</i>
+						</li>
+						<li>
+							<!--<div><span></span></div>-->
+							<a href="">
+								<img src="imgs/3.jpg" alt="" />
+								<h4>小米盒子3 增强版</h4>
+							</a>
+							<i>399元</i>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/3.jpg" alt="" />
+								<h4>小米家庭影院</h4>
+							</a>
+							<i>1999元</i>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div><span>大容量</span></div>
+							<a href="">
+								<img src="imgs/7.jpg" alt="" />
+								<h4>小米路由器HD/Pro</h4>
+							</a>
+							<i>499元起</i>
+						</li>
+						<li>
+							<div><span>双千兆</span></div>
+							<a href="">
+								<img src="imgs/7.jpg" alt="" />
+								<h4>小米路由器 3G</h4>
+							</a>
+							<i>249元</i>
+						</li>
+						<li>
+							<div><span>双频</span></div>
+							<a href="">
+								<img src="imgs/7.jpg" alt="" />
+								<h4>小米路由器3</h4>
+							</a>
+							<i>129元</i>
+						</li>
+						<li>
+							<div><span>包邮</span></div>
+							<a href="">
+								<img src="imgs/7.jpg" alt="" />
+								<h4>小米路由器3C</h4>
+							</a>
+							<i>99元</i>
+						</li>
+						<li>
+							<div><span>新品</span></div>
+							<a href="">
+								<img src="imgs/7.jpg" alt="" />
+								<h4>小米WiFi电力猫</h4>
+							</a>
+							<i>249元</i>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/7.jpg" alt="" />
+								<h4>小米WiFi放大器2</h4>
+							</a>
+							<i>49元</i>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div><span>航拍利器</span></div>
+							<a href="">
+								<img src="imgs/4.jpg" alt="" />
+								<h4>小米无人机</h4>
+							</a>
+							<i>2999元</i>
+						</li>
+						<li>
+							<div><span>包邮 </span></div>
+							<a href="">
+								<img src="imgs/4.jpg" alt="" />
+								<h4>小米手环2</h4>
+							</a>
+							<i>149元</i>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/4.jpg" alt="" />
+								<h4>小米净水器</h4>
+							</a>
+							<i>1499元</i>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/4.jpg" alt="" />
+								<h4>米家扫地机器人</h4>
+							</a>
+							<i>1699元</i>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/4.jpg" alt="" />
+								<h4>米加压力电饭煲</h4>
+							</a>
+							<i>999元</i>
+						</li>
+						<li>
+							<a href="">
+								<img src="imgs/4.jpg" alt="" />
+								<h4>查看全部</h4>
+								<h4>智能硬件</h4>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!--第三部分-->
+		<div class="slide-wrap">
+			<div class="container">
+				<!--第一块-->
+				<div class="slide-first">
+					<!--轮播图-->
+					<div class="banner">
+                         <ul class="imgList">
+                         	<li><a href=""><img src="imgs/lb1.jpg"/></a></li>
+                         	<li><a href=""><img src="imgs/lb2.jpg"/></a></li>
+                         	<li><a href=""><img src="imgs/lb3.jpg"/></a></li>
+                         	<li><a href=""><img src="imgs/lb4.jpg"/></a></li>
+                         	<li><a href=""><img src="https://i3.mifile.cn/a4/xmad_15021862610203_DLBhq.jpg"/></a></li>
+                         	<li><a href=""><img src="https://i3.mifile.cn/a4/5753d5e0-a89b-4a8b-ab00-a42eb66eb6f5"/></a></li>
+                         </ul>	
+                        <i class="fa fa-angle-left prev"></i>
+                        <i class="fa fa-angle-right next"></i>
+                        <ul class="iconList">
+                         	<li></li>
+                         	<li></li>
+                         	<li></li>
+                         	<li></li>
+                         	<li></li>
+                         	<li></li>
+                         </ul>
+					</div>
+					<!--侧边栏-->
+					<aside>
+						<ul class="sideList">
+							<li>
+								<a href="">手机 电话卡<i class="fa fa-angle-right"></i></a> </li>
+							<li>
+								<a href=""> 笔记本 平板<i class="fa fa-angle-right"></i></a></li>
+							<li>
+								<a href=""> 电视 盒子<i class="fa fa-angle-right"></i></a></li>
+							<li>
+								<a href=""> 路由器 智能硬件<i class="fa fa-angle-right"></i></a></li>
+							<li>
+								<a href=""> 移动电源 电池 插线板<i class="fa fa-angle-right"></i></a></li>
+							<li>
+								<a href=""> 耳机 音箱<i class="fa fa-angle-right"></i></a></li>
+							<li>
+								<a href=""> 保护套 贴膜<i class="fa fa-angle-right"></i></a></li>
+							<li>
+								<a href=""> 线材 支架 存储卡<i class="fa fa-angle-right"></i></a></li>
+							<li>
+								<a href=""> 箱包 服饰 鞋 眼镜<i class="fa fa-angle-right"></i></a></li>
+							<li>
+								<a href="">米兔 生活周边<i class="fa fa-angle-right"></i></a></li>
+						</ul>
+						<div class="rightList">
+							<section>
+								<ul>
+									<li>
+										<a href=""><img src="imgs/xm6_80.png" alt="" /> 小米6 </a>
+										<a class="xuan" href=""> 选购 </a>
+									</li>
+									<li>
+										<a href=""><img src="https://c1.mifile.cn/f/i/g/2015/80pc-5x.png?width=40&height=40" alt="" /> 小米5X </a>
+										<a class="xuan" href=""> 选购 </a>
+									</li>
+									<li>
+										<a href=""><img src="https://c1.mifile.cn/f/i/g/2015/cn-index/max2_80.jpg?width=40&height=40" alt="" /> 小米MAX2 </a>
+										<a class="xuan" href=""> 选购 </a>
+									</li>
+									<li>
+										<a href=""><img src="https://c1.mifile.cn/f/i/g/2015/cn-index/5c_80.png?width=40&height=40" alt="" /> 小米5c </a>
+										<a class="xuan" href=""> 选购 </a>
+									</li>
+									<li>
+										<a href=""><img src="https://c1.mifile.cn/f/i/g/2015/xmNOTE2-80.jpg?width=40&height=40" alt="" /> 小米Note2 </a>
+										<a class="xuan" href=""> 选购 </a>
+									</li>
+									<li>
+										<a href=""><img src="https://c1.mifile.cn/f/i/g/2015/MIX-80.jpg?width=40&height=40" alt="" /> 小米MIX </a>
+										<a class="xuan" href=""> 选购 </a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="">
+											<img src="imgs/5c_80.png" alt="" /><a href="">小米5s</a>
+											<a class="xuan" href=""> 选购 </a>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<img src="https://c1.mifile.cn/f/i/g/2015/xm5S-plus-80.jpg?width=40&height=40 "alt=" " />
+											 <a href="">小米5s Plus</a> 
+										    <a class="xuan" href=""> 选购 </a>
+									   </a>
+								    </li>
+								    <li>
+										<a href=" ">
+											<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/hmn4x80.png?width=40&height=40 " alt=" " /> 
+											<a href="">红米Note 4X</a>
+											<a class="xuan" href=""> 选购 </a>
+										</a>
+									</li>
+									<li>
+										<a href=" ">
+											<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/hm4x_80.png?width=40&height=40 " alt=" " /> <a href="">红米 4X</a>
+											<a class="xuan" href=""> 选购 </a>
+										</a>
+									</li>
+									<li>
+										<a href=" ">
+											<img src="https://c1.mifile.cn/f/i/g/2015/hm4-80.jpg?width=40&height=40 " alt=" " /><a href="">红米4</a>
+											<a class="xuan" href=""> 选购 </a>
+										</a>
+									</li>
+									<li>
+										<a href=" ">
+											<img src="imgs/80.jpg" alt=" " />
+											<a href=""> 移动4G+专区</a>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href=" ">
+										<img src="imgs/compare.jpg " alt=" " /><a href="">对比手机</a>
+										</a>
+										</li>
+									<li>
+										<a href=" ">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/mifenka-1.jpg?width=40&height=40 " alt=" "/><a href="">米粉卡 日租卡</a>
+										</a>
+									</li>
+									<li>
+										<a href=" ">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/mimobile.jpg?width=40&height=40 " alt=" " /> <a href="">小米移动 电话卡</a>
+										</a>
+									</li>
+								</ul>
+	    					</section>
+	    				    <section>
+	    				    	<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/bijiben80.jpg?width=40&height=40" alt="" /> <a>笔记本 12.5英寸</a>
+										<a class="xuan" href=""> 选购 </a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/bijiben80.jpg?width=40&height=40" alt="" /><a>笔记本 13.3英寸</a>
+										<a class="xuan" href=""> 选购 </a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/mipad3_80.jpg?width=40&height=40" alt="" /> <a>小米平板3</a>
+										<a class="xuan" href=""> 选购 </a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/bjbcdq80.jpg?width=40&height=40" alt="" /> <a>USB-C 电源适配器</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/usbzjqggg80.jpg?width=40&height=40" alt="" /> <a>USB-C 转接器</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/neidanbao80.jpg?width=40&height=40" alt="" /> <a>小米笔记本内胆包</a>
+									</a>
+								</li>
+							</ul>
+								<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/ymjp80.jpg?width=40&height=40" alt="" /><a>悦米机械键盘</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a>小米便携鼠标</a> 
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a>小米无线鼠标</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/wxsb80.png?width=40&height=40" alt="" /> <a>鼠标垫</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>Display Port转接器</a>
+									</a>
+								</li>
+							</ul>
+	    				    </section>
+						    <section>
+						    	<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/80xmds_49.jpg?width=40&height=40" alt="" /> <a>小米电视4 49英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/80xmds_55.jpg?width=40&height=40" alt="" /><a>小米电视4 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/80xmds_65.jpg?width=40&height=40" alt="" /> <a>小米电视4 65英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/zuodaohang.jpg?width=40&height=40" alt="" /> <a>小米电视4A 32英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xp80_49.jpg?width=40&height=40" alt="" /> <a>小米电视4A 49英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xp80_55.jpg?width=40&height=40" alt="" /> <a>小米电视4A  55英寸</a>
+									</a>
+								</li>
+							</ul>
+								<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xp80_65.jpg?width=40&height=40" alt="" /><a>小米电视4A  65英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a>小米电视3s 55英寸</a> 
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a> 小米电视3s 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/wxsb80.png?width=40&height=40" alt="" /> <a> 小米电视3s 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>小米电视3s 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>小米电视3s 55英寸</a>
+									</a>
+								</li>
+							</ul>
+								<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/ymjp80.jpg?width=40&height=40" alt="" /><a>小米电视3s 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a>小米电视3s 55英寸</a> 
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a> 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/wxsb80.png?width=40&height=40" alt="" /> <a> 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>55英寸</a>
+									</a>
+								</li>
+							</ul>
+								<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/ymjp80.jpg?width=40&height=40" alt="" /><a> 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a> 55英寸</a> 
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a> 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/wxsb80.png?width=40&height=40" alt="" /> <a> 55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>55英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>55英寸</a>
+									</a>
+								</li>
+							</ul>
+						    </section>
+						    <section>
+						    	<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/phcplus80.jpg?width=40&height=40" alt="" /> <a>9号平衡车</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/doodle/jiqiren.jpg?width=40&height=40" alt="" /><a>米家扫地机器人及配件</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/mipad3_80.jpg?width=40&height=40" alt="" /> <a>小米平板3</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/bjbcdq80.jpg?width=40&height=40" alt="" /> <a>USB-C 电源适配器</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/usbzjqggg80.jpg?width=40&height=40" alt="" /> <a>USB-C 转接器</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/neidanbao80.jpg?width=40&height=40" alt="" /> <a>小米笔记本内胆包</a>
+									</a>
+								</li>
+							</ul>
+								<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/ymjp80.jpg?width=40&height=40" alt="" /><a>悦米机械键盘</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a>小米便携鼠标</a> 
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a>小米无线鼠标</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/wxsb80.png?width=40&height=40" alt="" /> <a>鼠标垫</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>Display Port转接器</a>
+									</a>
+								</li>
+							</ul>
+						    </section>
+						    <section>
+						    	<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/dianyuan280.jpg?width=40&height=40" alt="" /> <a>小米移动电源</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/c1xb343.jpg?width=40&height=40" alt="" /><a>插线板</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/yidongdianyuan.jpg?width=40&height=40" alt="" /> <a>品牌移动电源</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/dianyuanfujian.jpg?width=40&height=40" alt="" /> <a>移动电源附件</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/chongdianqi-80.jpg?width=40&height=40" alt="" /> <a>充电器</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/5Battery1.jpg?width=40&height=40" alt="" /> <a>彩虹5号电池</a>
+									</a>
+								</li>
+							</ul>
+								<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/7Battery1.jpg?width=40&height=40" alt="" /><a>彩虹7号电池</a>
+									</a>
+								</li>
+							</ul>
+						    </section>
+						    <section>
+						    	<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/toudai80.jpg?width=40&height=40" alt="" /> <a>小米头戴式耳机</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/bijiben80.jpg?width=40&height=40" alt="" /><a>笔记本 13.3英寸</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/mipad3_80.jpg?width=40&height=40" alt="" /> <a>小米平板3</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/bjbcdq80.jpg?width=40&height=40" alt="" /> <a>USB-C 电源适配器</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/usbzjqggg80.jpg?width=40&height=40" alt="" /> <a>USB-C 转接器</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/neidanbao80.jpg?width=40&height=40" alt="" /> <a>小米笔记本内胆包</a>
+									</a>
+								</li>
+							</ul>
+								<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/ymjp80.jpg?width=40&height=40" alt="" /><a>悦米机械键盘</a>
+									</a>
+								</li>
+							</ul>
+						    </section>
+						    <section>
+						     	<ul>
+								<li>
+									<a href="">
+										<img src="imgs/tiemo.jpg" alt="" /> <a>贴膜</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="imgs/baohu.jpg" alt="" /><a>保护套</a>
+									</a>
+								</li>
+							</ul>
+						     </section>
+						    <section>
+						     	<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/xiancai.jpg?width=40&height=40" alt="" /> <a>线材</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/zipaigan.jpg?width=40&height=40" alt="" /><a> 自拍杆</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/zhijia.jpg?width=40&height=40" alt="" /> <a>手机支架</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/cunchu.jpg?width=40&height=40" alt="" /> <a>存储卡</a>
+									</a>
+								</li>
+							</ul>
+						     </section>
+						    <section>
+						    	<ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xiangbao-80.jpg?width=40&height=40" alt="" /> <a>箱包</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/15/goods/sidebar/lvxingxiang.jpg?width=40&height=40" alt="" /><a>90分旅行箱</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/huise2-80.jpg?width=40&height=40" alt="" /> <a>服饰</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/ydx80.jpg?width=40&height=40" alt="" /> <a>米家运动鞋 智能版</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/tyj80.jpg?width=40&height=40" alt="" /> <a>太阳镜</a>
+									</a>
+								</li>
+							</ul>
+						    </section>
+						    <section>
+						       <ul>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/mitu-80.jpg?width=40&height=40" alt="" /><a>米兔玩偶</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a>小米便携鼠标</a> 
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/shubiao80.jpg?width=40&height=40" alt="" /> <a>小米无线鼠标</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/wxsb80.png?width=40&height=40" alt="" /> <a>鼠标垫</a>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="https://c1.mifile.cn/f/i/g/2015/cn-index/xmsbd80.jpg?width=40&height=40" alt="" /> <a>Display Port转接器</a>
+									</a>
+								</li>
+							</ul>
+						    </section>
+
+						</div>
+	    			</aside>
+	    		</div>
+	    	<!--第二块-->
+			<div class="slide-second">
+					<ul class="liList">
+						<li><a href=""> <i class="fa fa-save"></i>选购手机 </a></li>
+						<li><a href=""> <i class="fa fa-save"></i>企业团购 </a></li>
+						<li><a href=""> <i class="fa fa-save"></i>一元活动 </a></li>
+						<li><a href=""> <i class="fa fa-save"></i>米粉卡 </a></li>
+						<li><a href=""> <i class="fa fa-save"></i>以旧换新 </a></li>
+						<li><a href=""> <i class="fa fa-save"></i>话费充值 </a></li>
+					</ul>
+				<div class="right">
+					<li><a href=""><img src="https://i3.mifile.cn/a4/xmad_14977951260311_AlzsH.jpg" alt="" /></a></li>
+				    <li><a href=""><img src="https://i3.mifile.cn/a4/xmad_15005382018863_bsqwp.jpg" alt="" /></a></li>
+				    <li><a href=""><img src="https://i3.mifile.cn/a4/360d6f13-4ffd-496d-8e34-9432ebf5d8fb" alt="" /></a></li>
+				</div>
+			</div>
+			<!--第三块 ---明星单品-->
+			<div class="slide-third">
+                 <h3>小米明星单品</h3>	
+                 <div class="stars">
+                 	 <section>
+                 	 	<ul>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/xmad_14917453512947_AmXkT.png"/></a>
+                 	 			<a href="">10000mA小米移动电源2</a>
+                 	 			<span> 双向快充，高密度锂聚合物电芯</span>
+                 	 			<i>79元</i>
+                 	 		</li>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/6ef55907-bbed-49be-a2bb-be0821b5f7b8"/></a>
+                 	 			<a href="">小米手环2 </a>
+                 	 			<span> OLED显示屏，升级计步算法</span>
+                 	 			<i> 149元</i>
+                 	 		</li>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/T1ZYC_BjWv1RXrhCrK.jpg"/></a>
+                 	 			<a href="">米家崖里IH电饭煲</a>
+                 	 			<span> 智能烹饪，压力IH加热技术</span>
+                 	 			<i> 999元</i>
+                 	 		</li>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/xmad_14972549116226_tZpod.png"/></a>
+                 	 			<a href="">米家空气净化器Pro</a>
+                 	 			<span> OLED显示，激光颗粒物传感器</span>
+                 	 			<i> 1499元</i>
+                 	 		</li>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/de35852a-1be5-4ef5-846f-dcdd2efcfea6"/></a>
+                 	 			<a href="">小米路由器3</a>
+                 	 			<span> 更快更强，不止四天线</span>
+                 	 			<i> 149元</i>
+                 	 		</li>
+                 	 	</ul>
+                 	 	<ul>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/xmad_1489401341687_vUojl.png"/></a>
+                 	 			<a href="">红米Note 4X</a>
+                 	 			<span> 4100mAh超长续航，多彩金属</span>
+                 	 			<i> 999元</i>
+                 	 		</li>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/5e2eb710-a99f-4235-ac5c-1b20b1e6c3b6"/></a>
+                 	 			<a href="">小米5s 64GB</a>
+                 	 			<span> 下单立减200元</span>
+                 	 			<i> 1999元</i>
+                 	 		</li>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/e991f1e2-20d8-40c3-bf1d-012b122c986b"/></a>
+                 	 			<a href="">小米5s Plus</a>
+                 	 			<span> 限时特惠，下单立减200元</span>
+                 	 			<i> 2299元起</i>
+                 	 		</li>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/xmad_150218693401_WiKBZ.png"/></a>
+                 	 			<a href="">小米电视24A 32英寸</a>
+                 	 			<span> 4100mAh超长续航，多彩金属</span>
+                 	 			<i> 1099元</i>
+                 	 		</li>
+                 	 		<li>
+                 	 			<a href=""><img src="https://i3.mifile.cn/a4/725a37e3-78b7-4298-8098-c40097bf179d"/></a>
+                 	 			<a href="">小米笔记本 4X</a>
+                 	 			<span> 更轻更薄，像杂志一样随身携带</span>
+                 	 			<i> 3599元起</i>
+                 	 		</li>
+                 	 	</ul>
+                 	 </section>
+                 	 <p>
+                 	 	<i class="fa fa-angle-left prev"></i>
+                 	    <i class="fa fa-angle-right next action"></i>
+                 	 </p>
+                 </div>
+			</div>
+			</div>
+	    </div>
+	    <!--第四部分-->
+	    <div class="main-wrap">
+	    	<div class="container">
+	    		<!--第四部分---第一块---家电-->
+	    		<div class="jiadian">
+	    			<div class="shoubu">
+	    				<h3>家电</h3>
+	    					<ul class="nav-wrap">
+	    						<li><a href="">热门</a></li>
+	    						<li><a href="">电视影音</a></li>
+	    						<li><a href="">电脑</a></li>
+	    						<li><a href="">家居</a></li>
+	    					</ul>
+	    			</div>
+	    			<div class="img-wrap">
+	    				<div class="left">
+	    					<a href=""><img src="https://i3.mifile.cn/a4/xmad_15021565964847_WSbuZ.jpg" alt="" /></a>
+	    			</div>
+	    				<div class="right">
+	    					<ul>
+	    						<li><a href="">
+	    							<img src="https://i3.mifile.cn/a4/xmad_14965431426214_VSBlA.png" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="zhe">享九折</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="zhe">享八折</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1499138177.54329452!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						</a>
+	    						<a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    </a>
+	    						<a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    		
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						    <a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<div class="top">
+	    								<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <p>
+	    						    	<a href="">小白摄像机</a>
+	    						    <span>395元</span>
+	    						    </p>
+	    							</div>
+	    							<div class="down">
+	    								<img src="https://i1.mifile.cn/a1/pms_1468806372.46368911!220x220.jpg" alt="" />
+	    								<p>
+	    								<a href="">浏览更多</a>
+	    								<span>热门</span>
+	    								</p>
+	    							</div>
+	    						</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a href="">
+	    							<img src="https://i3.mifile.cn/a4/xmad_14965431426214_VSBlA.png" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="zhe">享九折</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="zhe">享八折</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1499138177.54329452!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						</a>
+	    						<a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    </a>
+	    						<a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    		
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						    <a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<div class="top">
+	    								<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <p>
+	    						    	<a href="">小白摄像机</a>
+	    						    <span>395元</span>
+	    						    </p>
+	    							</div>
+	    							<div class="down">
+	    								<img src="https://i1.mifile.cn/a1/pms_1468806372.46368911!220x220.jpg" alt="" />
+	    								<p>
+	    								<a href="">浏览更多</a>
+	    								<span>热门</span>
+	    								</p>
+	    							</div>
+	    						</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a href="">
+	    							<img src="https://i3.mifile.cn/a4/xmad_14965431426214_VSBlA.png" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="zhe">享九折</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="zhe">享八折</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1499138177.54329452!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						</a>
+	    						<a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    </a>
+	    						<a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    		
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						    <a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<div class="top">
+	    								<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <p>
+	    						    	<a href="">小白摄像机</a>
+	    						    <span>395元</span>
+	    						    </p>
+	    							</div>
+	    							<div class="down">
+	    								<img src="https://i1.mifile.cn/a1/pms_1468806372.46368911!220x220.jpg" alt="" />
+	    								<p>
+	    								<a href="">浏览更多</a>
+	    								<span>热门</span>
+	    								</p>
+	    							</div>
+	    						</a></li>
+	    					</ul>
+	    					<ul>
+	    						<li><a href="">
+	    							<img src="https://i3.mifile.cn/a4/xmad_14965431426214_VSBlA.png" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="zhe">享九折</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="zhe">享八折</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1499138177.54329452!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						</a>
+	    						<a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    </a>
+	    						<a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    		
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						    <a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <a class="slide" href="">
+	    							<span>品质相当不错，对得起价格</span>
+	    							<span>来自7800123的评价</span>
+	    						</a></li>
+	    						<li><a href="">
+	    							<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <a href="">小米电视4 65英寸</a>
+	    						    <p>8月10日特惠开启，买赠小米电视...</p>
+	    						    <span>9999元</span>
+	    						    <i class="xin">有赠品</i>
+	    						</a></li>
+	    						<li><a href="">
+	    							<div class="top">
+	    								<img src="https://i1.mifile.cn/a1/pms_1495074053.84174465!220x220.jpg" alt="" />
+	    						    <p>
+	    						    	<a href="">小白摄像机</a>
+	    						    <span>395元</span>
+	    						    </p>
+	    							</div>
+	    							<div class="down">
+	    								<img src="https://i1.mifile.cn/a1/pms_1468806372.46368911!220x220.jpg" alt="" />
+	    								<p>
+	    								<a href="">浏览更多</a>
+	    								<span>热门</span>
+	    								</p>
+	    							</div>
+	    						</a></li>
+	    					</ul>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div> 
+	</body>
+	<script src="jquery.js "></script>
+	<script src="index.js "></script>
+
+</html>

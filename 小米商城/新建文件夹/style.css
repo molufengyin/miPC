@@ -1,0 +1,778 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #f5f5f5;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,header {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*可用的样式/重复的样式*/
+
+.container {
+	width: 1226px;
+	min-width: 1226px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+img{
+	display: block;
+}
+/*第一部分，头部内容*/
+
+.top-wrap {
+	background: #333;
+	font-size: 12px;
+}
+
+.top-wrap a {
+	color: #fff;
+}
+
+.top-wrap .left {
+	float: left;
+	overflow: hidden;
+}
+
+.top-wrap .left li {
+	float: left;
+	line-height: 40px;
+}
+
+.top-wrap .left li a {
+	border-right: solid 1px #424242;
+	color: #b0b0b0;
+	padding: 0 8px;
+}
+.top-wrap .left li.active a{
+	color: #fff;
+} 
+.top-wrap .right {
+	float: right;
+}
+
+.top-wrap .right>ul {
+	float: left;
+}
+
+.top-wrap .right>ul li {}
+
+.top-wrap .right>div {
+	float: right;
+	color: #b0b0b0;
+	margin-left: 20px;
+	background: #424242;
+	position: relative;
+}
+.top-wrap .right>div.active{
+	background: #fff;
+	color: orangered;
+}
+.top-wrap .right>div .shop {
+	line-height: 40px;
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+.top-wrap .right>div .shopMenu {
+	position: absolute;
+	background: #fff;
+	width: 400px;
+	line-height: 100px;
+	right: 0;
+	text-align: center;
+	color: #444;
+	box-shadow: 0 2px 5px #ccc;
+	display: none;
+	z-index: 10;
+}
+/*第二部分*/
+header{
+	background: #fff;
+}
+.nav-wrap .logo{
+	float: left;
+	margin:  20px 0;
+}
+.nav-wrap .yuan{
+	float: left;
+	margin-top: 15px;
+}
+.nav-wrap .left{
+	float: left;
+	overflow: hidden;
+}
+.nav-wrap .left li{
+	float: left;
+	/*margin: 15px 0;*/
+	line-height: 75px;
+}
+.nav-wrap .left li a{
+	display: block;
+    padding: 15px 10px;
+    color: #333;
+}
+.nav-wrap .left li.active a{
+	color: orangered;
+}
+.nav-wrap .right{
+	float: right;
+	border:  solid 1px #e0e0e0;
+	margin-top: 25px;
+}
+/*鼠标滑过的效果*/
+.nav-wrap > div >div.colors{
+	border: solid 1px #aaa;
+}
+.nav-wrap > div > div.colors > a{
+	border-left: solid 1px #aaa;
+}
+/*鼠标聚焦的效果*/
+.nav-wrap > div >div.active{
+	border: solid 1px orangered;
+}
+.nav-wrap > div > div.active > a{
+	border-left: solid 1px orangered;
+}
+
+.nav-wrap .right > div{
+	float: left;
+	position: relative;
+}
+.nav-wrap .right > div input{
+	border: none;
+	line-height: 45px;
+	padding: 0 7px;
+	width: 230px;
+	font-size: 18px;
+}
+.nav-wrap .right > div .schShow{
+	position: absolute;
+	right: 10px;
+	top: 11px;
+}
+.nav-wrap .right > div .schShow a{
+	color: #757575;
+	background: #eee;
+	font-size: 13px;
+	padding: 2px;
+	display: inline-block;
+}
+.nav-wrap .right > div .schShow a.active,
+.nav-wrap .right > a.active{
+	background: orangered;
+	color: #fff;
+}
+.nav-wrap .right > a{
+	float: right;
+	line-height: 45px;
+	width: 45px;
+	text-align: center;
+	border-left:solid 1px #e0e0e0;
+}
+.nav-wrap .right .schList{
+	display: none;
+	position: absolute;
+	border:  solid 1px orangered;
+	width: 100%;
+	border-top: none;
+	background: #fff;
+	margin-top: 1px;
+	z-index: 9;
+}
+.nav-wrap .right .schList  li a{
+	display: block;
+	line-height: 35px;
+	font-size: 14px;
+	padding: 0 10px;
+	color: #424242;
+}
+.nav-wrap .right .schList  li.active a{
+	background: #e1e1e1;
+}
+.nav-wrap .right .schList  li a span{
+	color: #b0b0b0;
+	float: right;
+}
+/*下拉菜单*/
+.dropMenu{
+	background: #fff;
+	border-top:  solid 1px #e0e0e0;
+	border-bottom: solid 1px#e0e0e0;
+	box-shadow:0 1px 1px #ccc;
+	margin-bottom: 300px;
+	display: none;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+.dropMenu ul{
+	overflow: hidden;
+	display: none;
+}
+.dropMenu ul.active{
+	display: block;
+}
+.dropMenu ul li{
+	float: left;
+	width: 180px;
+	text-align: center;
+	position: relative;
+	padding: 35px 8px;
+}
+.dropMenu ul li img{
+	width: 160px;
+	height: 110px;
+	/*border-right: solid 1px #e0e0e0;*/
+	z-index: 10;
+}
+/*:after 伪元素选择器，当做一个标签元素看待，增加内容*/
+.dropMenu ul li:after{
+	position: absolute;
+    content: '';
+    background: #E0E0E0;
+    width: 1px;
+    height: 110px;
+    right: 0;
+    top: 40px;
+}
+.dropMenu ul li:last-child:after{
+	display: none;
+}
+.dropMenu ul li div{
+		position: absolute;
+		width: 100%;
+		top: 1px;
+		left: 0;
+}
+.dropMenu ul li span{
+	color: orangered;
+	border: solid 1px orangered;
+	font-size: 12px;
+	padding: 0 10px;
+}
+.dropMenu ul li h4{
+	line-height: 30px;
+	color: #333333;
+	font-weight: normal;
+}
+.dropMenu ul li i{
+	font-style: normal;
+	color: orangered;
+}
+/*第三部分---第一块*/
+.slide-wrap{
+	background: #fff;
+}
+.slide-first{
+	width: 100%;
+	height: 460px;
+	position: relative;
+}
+.banner .imgList li{
+	position: absolute;
+}
+.banner .iconList{
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+}
+.banner .iconList li{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: rgba(0,0,0,0.3);
+	border: solid 2px #fff;
+	border-color: rgba(255,255,255,0.3);
+	float: left;
+	margin: 0 4px;
+	cursor: pointer;
+}
+.banner .iconList li.active{
+	background: #fff;
+	/*border: solid 1px #444;*/
+}
+.banner .iconList li.active{
+	border-color: rgba(0,0,0,0.4);
+	background: rgba(255,255,255,0.4);
+}
+.banner i.fa{
+	position: absolute;
+	width: 41px;
+	height: 69px;
+	font-size: 50px;
+	color: #757575;
+	text-align: center;
+	line-height: 69px;
+	top: 45%;
+	right: 0;
+	cursor: pointer;
+}
+.banner .prev{
+	left: 240px;
+}
+.banner i.active{
+	background: rgba(0,0,0,0.3);
+	color: #fff;
+}
+/*侧边栏*/
+.slide-first aside {
+	position: absolute;
+}
+.sideList{
+		background: rgba(0,0,0,0.3);
+		height: 460px;
+		width: 240px;
+		padding: 20px 0;
+}
+.sideList li a{
+	color: #fff;
+	font-size: 14px;
+	display: block;
+	padding: 0 20px;
+	line-height: 42px;
+}
+.sideList li.active a{
+	background: orangered;
+}
+.sideList li a i.fa{
+	font-size: 18px;
+	color: rgba(255,255,255,0.5);
+	float: right;
+	line-height: 42px;
+}
+.rightList{
+	position: absolute;
+	height: 460px;
+	left: 240px;
+	top: 0;
+	background: #fff;
+	border-top: #e0e0e0e;
+	box-shadow: 0 1px 5px #ccc;
+}
+.rightList section{
+	width: 795px;
+	display: none;
+	height: 460px;
+}
+.rightList ul{
+	width: 265px;
+	/*height: 100%*/
+	float:left;
+}
+.rightList ul li{
+	position: relative;
+}
+.rightList ul li a.actives{
+	color: orangered;
+}
+.rightList ul li a{
+	display: block;
+	line-height: 76px;
+	color: #333;
+	font-size: 14px;
+}
+.rightList ul li a img{
+	float: left;
+	margin-left: 20px;
+	margin-right: 15px;
+	margin-top: 18px;
+}
+.rightList ul a.xuan{
+	position: absolute;
+	right: 0;
+	top: 27px;
+	border: solid 1px orangered;
+	color: orangered;
+	line-height: 22px;
+	padding: 0 12px;
+}
+.rightList ul li a.active{
+	background: orangered;
+	color: #fff;
+	transition:  all .3s;
+}
+/*第二块*/
+.slide-second{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.slide-second .liList{
+	float: left;
+	width: 240px;
+	background: #665e57;
+	overflow: hidden;
+}
+.slide-second  .liList li{
+	float: left;
+	width: 74px;
+	opacity: 0.8;
+	position: relative;
+	padding: 0 8px;
+}
+.slide-second .liList li:first-child:after{
+	top:15px ;
+	right:0px;
+	content: ' ';
+	position: absolute;
+	background: #aaa;
+	width: 1px;
+	height: 70%;
+}
+.slide-second .liList li:nth-child(2):after{
+	top:15px ;
+	right:0px;
+	content: ' ';
+	position: absolute;
+	background: #aaa;
+	width: 1px;
+	height: 70%;
+}
+.slide-second .liList li:nth-child(4):after{
+	top:15px ;
+	right:0px;
+	content: ' ';
+	position: absolute;
+	background: #aaa;
+	width: 1px;
+	height: 70%;
+}
+.slide-second .liList li:nth-child(5):after{
+	top:15px ;
+	right:0px;
+	content: ' ';
+	position: absolute;
+	background: #aaa;
+	width: 1px;
+	height: 70%;
+}
+.slide-second .liList li:first-child a{
+	border-bottom: solid 1px #aaa;
+}
+.slide-second .liList li:nth-child(2) a{
+	border-bottom: solid 1px #aaa;
+}
+.slide-second .liList li:nth-child(3) a{
+	border-bottom: solid 1px #aaa;
+}
+.slide-second .liList li a{
+	font-size: 12px;
+	color: #eee;
+	display: block;
+	text-align: center;
+	padding: 15px 0;
+}
+.slide-second .liList li.active a{
+	opacity: 1;
+}
+.slide-second .liList li a i{
+display:block;
+height: 24px;
+font-size: 25px;
+width: 70px;
+padding: 10px;
+margin-bottom: 10px;
+}
+.slide-second .right{
+	float: right;
+	overflow: hidden;
+}
+.slide-second .right li{
+	float: left;
+	width: 316px;
+	height: 163px;
+	list-style: none;
+}
+.slide-second .right li:nth-child(2){
+	margin: 0 15px;
+}
+.slide-second .right li img{
+	width: 100%;
+	height: 163px;
+}
+/*第三块*/
+.slide-third{
+	position: relative;
+	margin-bottom: 90px;
+}
+.slide-third h3{
+	font-weight:normal ;
+	font-size: 22px;
+	color: #333;
+	line-height: 58px;
+}
+.slide-third .stars{
+	width: 100%;
+	overflow: hidden;
+}
+.slide-third .stars section{
+	width: 2600px;
+	overflow: hidden;
+	position: relative;
+}
+.slide-third  .stars ul{
+	width: 1226px;
+	float: left;
+	overflow: hidden;
+}
+.slide-third .stars ul li{
+	width: 234px;
+	margin-right: 14px;
+	float: left;
+	background: #fafafa;
+	text-align: center;
+}
+.slide-third .stars ul li:first-child{
+	border-top:solid 1px #ffac13;
+}
+.slide-third .stars ul li:nth-child(2){
+	border-top: solid 1px #83c44e;
+}
+.slide-third .stars ul li:nth-child(3){
+	border-top:solid 1px #2196f3;
+}
+.slide-third .stars ul li:nth-child(4){
+	border-top:solid 1px #e53935;
+}
+.slide-third .stars ul li:last-child{
+	margin-right: 0;
+	border-top:solid 1px #00c0a5;
+}
+/*first-of-type（）同类型标签中的第一个*/
+.slide-third .stars ul li a:first-of-type{
+	width: 160px;
+	display: block;
+	margin: 40px auto 22px;
+}
+.slide-third .stars ul li img{
+	width: 100%;
+}
+.slide-third .stars ul li a:nth-of-type(2){
+	display: block;
+	color: #212121;
+	font-size: 14px;
+}
+.slide-third .stars ul li span{
+	display: block;
+	color: #b0b0b0;
+	font-size: 12px;
+	margin:5px 20px 15px;
+}
+.slide-third .stars ul li i{
+	display: block;
+	font-style: normal;
+	color: orangered;
+	margin-bottom: 40px;
+	font-size: 14px;
+}
+.slide-third .stars p{
+	position: absolute;
+	right: 0;
+	top: 25px;
+	/*取消两个i标签的间距*/
+	font-size: 0;
+}
+.slide-third .stars p i.fa{
+	width: 40px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 22px;
+	border: solid 1px #e0e0e0;
+	color: #e0e0e0;
+}
+.slide-third .stars p i.action{
+	color: #ccc;
+	cursor: pointer;
+}
+.slide-third .stars p i.active{
+	color: orangered;
+	cursor: pointer;
+}
+/*第四部分---第一块*/
+.jiadian{
+	
+}
+.shoubu{
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding: 5px 0;
+}
+.jiadian h3{
+	float: left;
+	font-size: 23px;
+	font-weight: normal;
+}
+.jiadian .nav-wrap{
+	float: right;
+	font-size: 18px;
+	overflow: hidden;
+}
+.jiadian .nav-wrap > li{
+	float: left;
+}
+.jiadian .nav-wrap > li > a{
+	color: #444;
+	margin-left: 20px;
+	padding: 2px 0 ;
+	border-bottom: solid 2px orangered;
+}
+.jiadian .nav-wrap > li > a.active{
+	border-bottom: solid 2px orangered;
+}
+.jiadian .img-wrap{
+	overflow: hidden;
+	position: relative;
+}
+.jiadian .img-wrap .left{
+	float: left;
+	width: 234px;
+	height: 614px;
+}
+.jiadian .img-wrap .left img{
+	width: 100%;
+}
+.jiadian .img-wrap .left img.active{
+	box-shadow: 0 0 10px #777;
+}
+.jiadian .img-wrap .right{
+	float: right;
+	/*position: relative;*/
+}
+.jiadian .img-wrap .right ul{
+	width: 980px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 234px;
+}
+.jiadian .img-wrap .right ul li{
+	width: 230px;
+	height: 300px;
+	float: left;
+	margin: 0px 7px 10px 8px;
+	background: #fff;
+	padding: 0 20px;
+	position: relative;
+}
+.jiadian .img-wrap .right ul li img{
+	width: 150px;
+	height: 110px;
+	text-align: center;
+	margin: 0 20px;
+	margin-top: 30px;
+}
+.jiadian .img-wrap .right ul li a{
+	display: block;
+	color: #444;
+	font-size: 14px;
+	text-align: center;
+}
+.jiadian .img-wrap .right ul li a.slide{
+	width: 230px;
+	background: orangered;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	display: none;
+}
+.jiadian .img-wrap .right ul li a.slide.active{
+	display: block;
+}
+.jiadian .img-wrap .right ul li a.slide span:first-child{
+	color: #fff;
+}
+.jiadian .img-wrap .right ul li a.slide span:last-child{
+	color: #aaa;
+}
+.jiadian .img-wrap .right ul li i{
+	font-style: normal;
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 85px;
+	text-align: center;
+	padding: 3px 10px;
+	/*border: solid 1px blue;*/
+}
+.jiadian .img-wrap .right ul li.active{
+	box-shadow: 0 0 10px #777;
+}
+.jiadian .img-wrap .right ul li i.xin{
+	background:lightgreen;
+}
+.jiadian .img-wrap .right ul li i.zhe{
+	 	background:red; 
+}
+.jiadian .img-wrap .right ul li p{
+	font-size: 11px;
+	color: #aaa;
+	text-align: center;
+}
+.jiadian .img-wrap .right ul li span{
+	display: block;
+	font-size: 14px;
+	color: orangered;
+	text-align: center;
+	margin-top: 20px;
+}
+.jiadian .img-wrap .right ul li:last-child{
+	padding-bottom: 0;
+	background: #F5F5F5;
+	padding:0 ;
+}
+.jiadian .img-wrap .right ul li:last-child div{
+		overflow: hidden;
+		background: #fff;
+		padding: 0 15px;
+		height: 150px;
+}
+
+.jiadian .img-wrap .right ul li:last-child div p{
+	display: inline-block;
+	float: left;
+	margin-top:40px ;
+}
+.jiadian .img-wrap .right ul li:last-child div.top p{
+	
+}
+.jiadian .img-wrap .right ul li:last-child div.down{
+	margin-top: 6px;
+}
+.jiadian .img-wrap .right ul li:last-child div.down p span{
+	color: #aaa;
+}
+.jiadian .img-wrap .right ul li:last-child img{
+	float: right;
+	width: 80px;
+	height: 80px;
+}
